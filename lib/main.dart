@@ -13,8 +13,8 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: const MyHomePage(),
+    return const MaterialApp(
+      home: MyHomePage(),
     );
   }
 }
@@ -38,7 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
       backgroundColor: Color(0xFF282E3D),
       body: Stack(
         children: [
-          Align(
+          const Align(
             alignment: Alignment(0, -0.8),
             child: Text("Test your\nreaction speed",
                 textAlign: TextAlign.center,
@@ -57,7 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Center(
                   child: Text(millisecondsText,
                       textAlign: TextAlign.center,
-                      style: TextStyle(
+                      style: const TextStyle(
                           fontSize: 36,
                           fontWeight: FontWeight.w500,
                           color: Colors.white)),
@@ -91,7 +91,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: Center(
                     child: Text(_getButtonText(),
                         textAlign: TextAlign.center,
-                        style: TextStyle(
+                        style: const TextStyle(
                             fontSize: 38,
                             fontWeight: FontWeight.w900,
                             color: Colors.white)),
